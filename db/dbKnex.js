@@ -100,13 +100,13 @@ CREATE TRIGGER update_kanban_cards_modtime BEFORE UPDATE ON kanban_cards FOR EAC
 CREATE TRIGGER update_cards_events_modtime BEFORE UPDATE ON cards_events FOR EACH ROW EXECUTE PROCEDURE  update_modified_column();
 `
 
-knex.raw(setupSQL)
-  .then(() => {
-    console.log('created database');
-  })
-  .catch(err => {
-    console.log('Error creating db in knex: ', err)
-  })
+// knex.raw(setupSQL)
+//   .then(() => {
+//     console.log('created database');
+//   })
+//   .catch(err => {
+//     console.log('Error creating db in knex: ', err)
+//   })
 
 
 module.exports = knex;
