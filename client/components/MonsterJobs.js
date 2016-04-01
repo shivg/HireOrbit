@@ -7,8 +7,15 @@ class MonsterFrame extends React.Component {
     
     console.log("monster jobs: ", this.props);
 
-    var q = this.props.query.q.split(" ").join("-") || "Software-Engineer";
-    var where = this.props.query.l.split(" ").join("-") || "San-Francisco";
+    var q, where;
+
+    if (!this.props.query.q) {
+      q = "Software-Engineer";
+      where = "San-Francisco";
+    } else {
+      q = this.props.query.q.split(" ").join("-") || "Software-Engineer";
+      where = this.props.query.l.split(" ").join("-") || "San-Francisco";
+    }
 
     this.state = {
       iframeURL: `http://jobs.monster.com/search/?q=${q}&where=${where}`
