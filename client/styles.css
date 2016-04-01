@@ -1393,3 +1393,17 @@ svg.svg {
 .radio-box .dataVizForm {
  color: #fbfbfb;
 }
+
+.dataviz__heading {
+  margin-top: 8%;
+  margin-bottom: 0;
+  text-align: center;
+  color: #A7A7A7;
+}
+
+.dataviz__subheading {
+  margin-top: 10px;
+  margin-bottom: 6%;
+  text-align: center;
+  color: #A7A7A7;
+}

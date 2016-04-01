@@ -102,8 +102,8 @@ import _ from 'lodash';
       return (
         <div id="chart">
           <Video />
-          <h2>Top paying cities in tech (2016)</h2>
-          <p>Top paying cities in tech, based on salary and job openings.</p>
+          <h2 className="dataviz__heading">Top paying cities in tech (2016)</h2>
+          <p className="dataviz__subheading">Top paying cities in tech, based on salary and job openings.</p>
           <form onSubmit = { this.onSubmit }>
             <div className="radio-box">
               <div>
