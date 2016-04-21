@@ -19,7 +19,7 @@ create table indeed_jobs (
   sponsored boolean,
   expired boolean,
   indeedapply boolean,
-  formattedlocationfull text,
+  formattedLocationfull text,
   nouniqueurl boolean,
   formattedrelativetime text,
   onmousedown text
