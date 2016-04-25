@@ -9,7 +9,7 @@ const companyLogoSpaced = {}
 
 
 
-
+// for all jobs in  db , fetch images
 db.raw(`select * from indeed_jobs`)
   .then(results => {
     var companyListSingle = results.rows.filter(job => job.company.indexOf(' ') === -1).map(job => job.company);
